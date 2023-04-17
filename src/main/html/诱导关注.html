@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<head>
+    <title>ClickJacking点击劫持</title>
+    <style>
+        html,body,iframe{
+            display: block;
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            border:none;
+        }
+        iframe{
+            opacity:0.2;
+            position:absolute;
+            z-index:2;
+        }
+        div{
+            display: flex;
+            justify-content: space-around;
+            position:absolute;
+            top: 335px;
+            left: 430px;
+            z-index: 1;
+            width: 300px;
+            height: 26px;
+        }
+    </style>
+</head>
+<body>
+<!-- 例子中的按钮位置是写定的，在不同分辨率下并不一定合适，应该动态确定按钮位置，但是作为一个Demo就不作过多操作了 -->
+<div>那些不能说的秘密<button>查看详情</button></div>
+<!--<iframe src="https://juejin.cn/post/6912030758404259854"></iframe>-->
+<!--<iframe src="https://tieba.baidu.com/f?kw=%E6%96%97%E7%A0%B4%E8%8B%8D%E7%A9%B9%E5%8A%A8%E6%BC%AB"></iframe>-->
+<iframe src="https://gitee.com/"></iframe>
+</body>
+</html>

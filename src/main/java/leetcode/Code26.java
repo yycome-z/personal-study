@@ -1,7 +1,5 @@
 package main.java.leetcode;
 
-import java.util.HashSet;
-
 /**
  * 删除有序数组中的重复项
  *
